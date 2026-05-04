@@ -1,6 +1,6 @@
 {
   "name": "@agentresources/mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Operational Model Context Protocol (MCP) server + `ar` CLI for Agent Resources. Wraps Trust Card lookup, signed telemetry, memory verbs, signing-key management, and ships the `ar doctor` self-diagnostic.",
   "license": "MIT",
   "author": "Agent Resources",
@@ -45,8 +45,8 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@agentresources/sdk": "^0.1.0",
-    "@agentresources/verify": "^0.1.0",
+    "@agentresources/sdk": "^0.1.1",
+    "@agentresources/verify": "^0.1.1",
     "@modelcontextprotocol/sdk": "^1.0.0",
     "@noble/curves": "^2.0.0",
     "@noble/hashes": "^2.0.0",
