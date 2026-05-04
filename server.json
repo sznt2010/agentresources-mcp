@@ -1,5 +1,5 @@
 {
-  "$schema": "https://modelcontextprotocol.io/schemas/draft/2025-11-25/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.sznt2010/agentresources-mcp",
   "description": "Cryptographic trust layer for autonomous agents — Trust Card lookup, signed telemetry, ERC-8004 identity, and x402 payments in one MCP server.",
   "status": "active",

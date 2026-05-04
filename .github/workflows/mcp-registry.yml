@@ -29,7 +29,7 @@ jobs:
           set -euo pipefail
           npm i -g ajv-cli@5
           curl -sSL -o /tmp/server.schema.json \
-            https://modelcontextprotocol.io/schemas/draft/2025-11-25/server.schema.json
+            https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json
           ajv validate -s /tmp/server.schema.json -d server.json --strict=false
 
       - name: Publish via mcp-publisher
