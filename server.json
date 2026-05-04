@@ -1,0 +1,41 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/draft/2025-11-25/server.schema.json",
+  "name": "io.github.sznt2010/agentresources-mcp",
+  "description": "Cryptographic trust layer for autonomous agents — Trust Card lookup, signed telemetry, ERC-8004 identity, and x402 payments in one MCP server.",
+  "status": "active",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/sznt2010/agentresources-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://agentresources.xyz",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@agentresources/mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "runtimeHint": "npx",
+      "runtimeArguments": [
+        { "type": "positional", "value": "-y" },
+        { "type": "positional", "value": "@agentresources/mcp" }
+      ],
+      "environmentVariables": [
+        {
+          "name": "AR_API_BASE",
+          "description": "Override AR gateway base URL. Defaults to https://api.agentresources.xyz",
+          "isRequired": false
+        },
+        {
+          "name": "AR_AGENT_PRIVATE_KEY",
+          "description": "secp256k1 private key (hex) used to sign telemetry envelopes and authenticate via wallet-session login. Required for write-side tools (telemetry, memory, signing-keys). Optional for read-side tools (trust_card_lookup).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
